@@ -29,7 +29,7 @@ def predict(image, model, device, detection_threshold):
     # print the results individually
     # print(f"BOXES: {outputs[0]['boxes']}")
     # print(f"LABELS: {outputs[0]['labels']}")
-    print(f"SCORES: {outputs[0]['scores']}")
+    # print(f"SCORES: {outputs[0]['scores']}")
     # get all the predicited class names
     pred_classes = [coco_names[i] for i in outputs[0]['labels'].cpu().numpy()]
     # get score for all the predicted objects
